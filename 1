@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box !important;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        table {
+            width: 700px;
+            border: 1px solid #000;
+
+        }
+
+        td {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 3rem;
+            font-size: 100px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>X <small>0:0</small> O</h1>
+
+    <table>
+        <tr>
+            <td>?</td>
+            <td>?</td>
+            <td>?</td>
+        </tr>
+        <tr>
+            <td>?</td>
+            <td>?</td>
+            <td>?</td>
+        </tr>
+        <tr>
+            <td>?</td>
+            <td>?</td>
+            <td>?</td>
+        </tr>
+    </table>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+        // Import the functions you need from the SDKs you need
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAfx9M6futH-532_xo5lBuvYKeFUu7wwuY",
+            authDomain: "proje-26239.firebaseapp.com",
+            databaseURL: "https://proje-26239-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "proje-26239",
+            storageBucket: "proje-26239.appspot.com",
+            messagingSenderId: "741207056023",
+            appId: "1:741207056023:web:e3f6857c6726af4b3513d2"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
